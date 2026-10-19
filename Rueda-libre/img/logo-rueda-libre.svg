@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" role="img" aria-labelledby="title desc">
+  <title id="title">Rueda Libre</title>
+  <desc id="desc">Logo con dos ruedas y el nombre Rueda Libre</desc>
+  <g fill="none" stroke="#176b55" stroke-width="7">
+    <circle cx="52" cy="70" r="30"/><circle cx="123" cy="70" r="30"/>
+    <path d="M52 70 78 35l20 35H52l15-35h25m-26 0h-9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="165" y="61" fill="#176b55" font-family="Arial, sans-serif" font-size="25" font-weight="700">RUEDA</text>
+  <text x="165" y="90" fill="#26332f" font-family="Arial, sans-serif" font-size="25" font-weight="700">LIBRE</text>
+</svg>
