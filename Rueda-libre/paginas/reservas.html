@@ -29,11 +29,12 @@
           <legend>Tus datos</legend>
           <p>
             <label for="nombre-completo">Nombre completo</label>
-            <input type="text" id="nombre-completo" name="nombre_completo" autocomplete="name" required>
+            <input type="text" id="nombre-completo" name="nombre_completo" autocomplete="name" minlength="3" required>
           </p>
           <p>
             <label for="documento">Número de documento</label>
-            <input type="text" id="documento" name="documento" inputmode="numeric" required>
+            <input type="text" id="documento" name="documento" inputmode="numeric" pattern="[0-9]{6,10}" title="Ingresa entre 6 y 10 dígitos, sin puntos ni espacios." aria-describedby="ayuda-documento" required>
+            <small id="ayuda-documento">Entre 6 y 10 dígitos, sin puntos ni espacios.</small>
           </p>
           <p>
             <label for="correo">Correo electrónico</label>
@@ -41,7 +42,8 @@
           </p>
           <p>
             <label for="celular">Celular</label>
-            <input type="tel" id="celular" name="celular" autocomplete="tel" required>
+            <input type="tel" id="celular" name="celular" autocomplete="tel" pattern="3[0-9]{9}" title="Ingresa 10 dígitos; el número debe empezar por 3." aria-describedby="ayuda-celular" required>
+            <small id="ayuda-celular">10 dígitos y debe empezar por 3.</small>
           </p>
         </fieldset>
 
@@ -49,7 +51,7 @@
           <legend>Tu alquiler</legend>
           <p>
             <label for="fecha-alquiler">Fecha del alquiler</label>
-            <input type="date" id="fecha-alquiler" name="fecha_alquiler" required>
+            <input type="date" id="fecha-alquiler" name="fecha_alquiler" min="2026-11-01" max="2026-12-31" required>
           </p>
           <fieldset>
             <legend>Tipo de bicicleta</legend>
@@ -68,7 +70,7 @@
           </p>
           <p>
             <label for="cantidad">Cantidad de bicicletas</label>
-            <input type="number" id="cantidad" name="cantidad_bicicletas" min="1" step="1" value="1" required>
+            <input type="number" id="cantidad" name="cantidad_bicicletas" min="1" max="6" step="1" value="1" required>
           </p>
           <p>
             <label for="recorrido">Recorrido guiado</label>
@@ -81,7 +83,7 @@
           </p>
           <p>
             <label for="comentarios">Comentarios</label>
-            <textarea id="comentarios" name="comentarios" rows="5" cols="40"></textarea>
+            <textarea id="comentarios" name="comentarios" rows="5" cols="40" maxlength="300"></textarea>
           </p>
         </fieldset>
 
