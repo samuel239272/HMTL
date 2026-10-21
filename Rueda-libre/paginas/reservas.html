@@ -8,6 +8,7 @@
   <title>Reservas | Rueda Libre Medellín</title>
 </head>
 <body>
+  <a href="#contenido-principal">Saltar al contenido principal</a>
   <header>
     <a href="../index.html" aria-label="Rueda Libre, volver al inicio">
       <img src="../img/RUEDALIBRE.png" alt="Logo de Rueda Libre con un ciclista y el nombre de la marca" width="200">
@@ -20,7 +21,7 @@
     </nav>
   </header>
 
-  <main>
+  <main id="contenido-principal" tabindex="-1">
     <section id="formulario-reserva">
       <h1>Formulario de reserva</h1>
       <p>Completa tus datos y cuéntanos qué bicicleta y plan quieres reservar.</p>
@@ -29,7 +30,8 @@
           <legend>Tus datos</legend>
           <p>
             <label for="nombre-completo">Nombre completo</label>
-            <input type="text" id="nombre-completo" name="nombre_completo" autocomplete="name" minlength="3" required>
+            <input type="text" id="nombre-completo" name="nombre_completo" autocomplete="name" minlength="3" aria-describedby="ayuda-nombre" required>
+            <small id="ayuda-nombre">Escribe al menos 3 caracteres.</small>
           </p>
           <p>
             <label for="documento">Número de documento</label>
@@ -51,7 +53,8 @@
           <legend>Tu alquiler</legend>
           <p>
             <label for="fecha-alquiler">Fecha del alquiler</label>
-            <input type="date" id="fecha-alquiler" name="fecha_alquiler" min="2026-11-01" max="2026-12-31" required>
+            <input type="date" id="fecha-alquiler" name="fecha_alquiler" min="2026-11-01" max="2026-12-31" aria-describedby="ayuda-fecha" required>
+            <small id="ayuda-fecha">Elige una fecha entre el 1 de noviembre y el 31 de diciembre de 2026.</small>
           </p>
           <fieldset>
             <legend>Tipo de bicicleta</legend>
@@ -70,7 +73,8 @@
           </p>
           <p>
             <label for="cantidad">Cantidad de bicicletas</label>
-            <input type="number" id="cantidad" name="cantidad_bicicletas" min="1" max="6" step="1" value="1" required>
+            <input type="number" id="cantidad" name="cantidad_bicicletas" min="1" max="6" step="1" value="1" aria-describedby="ayuda-cantidad" required>
+            <small id="ayuda-cantidad">Puedes reservar entre 1 y 6 bicicletas.</small>
           </p>
           <p>
             <label for="recorrido">Recorrido guiado</label>
