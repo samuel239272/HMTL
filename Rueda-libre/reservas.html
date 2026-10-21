@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Solicita tu reserva de bicicletas y recorridos guiados con Rueda Libre en Medellín.">
+  <link rel="icon" type="image/png" href="img/RUEDALIBRE.png">
+  <title>Reservas | Rueda Libre Medellín</title>
+</head>
+<body>
+  <header>
+    <a href="index.html" aria-label="Rueda Libre, volver al inicio">
+      <img src="img/RUEDALIBRE.png" alt="Logo de Rueda Libre con un ciclista y el nombre de la marca" width="200">
+    </a>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="paginas/tarifas.html">Tarifas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="formulario-reserva">
+      <h1>Formulario de reserva</h1>
+      <p>Completa tus datos y cuéntanos qué bicicleta y plan quieres reservar.</p>
+      <form action="reservas.html" method="post">
+        <fieldset>
+          <legend>Tus datos</legend>
+          <p>
+            <label for="nombre-completo">Nombre completo</label>
+            <input type="text" id="nombre-completo" name="nombre_completo" autocomplete="name" required>
+          </p>
+          <p>
+            <label for="documento">Número de documento</label>
+            <input type="text" id="documento" name="documento" inputmode="numeric" required>
+          </p>
+          <p>
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" autocomplete="email" required>
+          </p>
+          <p>
+            <label for="celular">Celular</label>
+            <input type="tel" id="celular" name="celular" autocomplete="tel" required>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tu alquiler</legend>
+          <p>
+            <label for="fecha-alquiler">Fecha del alquiler</label>
+            <input type="date" id="fecha-alquiler" name="fecha_alquiler" required>
+          </p>
+          <fieldset>
+            <legend>Tipo de bicicleta</legend>
+            <p><input type="radio" id="bicicleta-urbana" name="tipo_bicicleta" value="urbana" required> <label for="bicicleta-urbana">Urbana</label></p>
+            <p><input type="radio" id="bicicleta-montana" name="tipo_bicicleta" value="montana"> <label for="bicicleta-montana">Montaña</label></p>
+            <p><input type="radio" id="bicicleta-electrica" name="tipo_bicicleta" value="electrica"> <label for="bicicleta-electrica">Eléctrica</label></p>
+          </fieldset>
+          <p>
+            <label for="plan">Plan</label>
+            <select id="plan" name="plan" required>
+              <option value="" selected disabled>Selecciona un plan</option>
+              <option value="1-hora">1 hora</option>
+              <option value="medio-dia">Medio día</option>
+              <option value="dia-completo">Día completo</option>
+            </select>
+          </p>
+          <p>
+            <label for="cantidad">Cantidad de bicicletas</label>
+            <input type="number" id="cantidad" name="cantidad_bicicletas" min="1" step="1" value="1" required>
+          </p>
+          <p>
+            <label for="recorrido">Recorrido guiado</label>
+            <select id="recorrido" name="recorrido_guiado">
+              <option value="ninguno">Ninguno</option>
+              <option value="rio-y-parques">Río y Parques</option>
+              <option value="sabores-de-barrio">Sabores de Barrio</option>
+              <option value="reto-las-palmas">Reto Las Palmas</option>
+            </select>
+          </p>
+          <p>
+            <label for="comentarios">Comentarios</label>
+            <textarea id="comentarios" name="comentarios" rows="5" cols="40"></textarea>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Confirmación</legend>
+          <p>
+            <input type="checkbox" id="acepta-politicas" name="acepta_politicas" value="si" required>
+            <label for="acepta-politicas">Acepto las políticas de alquiler</label>
+          </p>
+        </fieldset>
+
+        <button type="submit" name="accion" value="enviar">Enviar reserva</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="index.html">Volver a Rueda Libre</a></p>
+  </footer>
+</body>
+</html>
