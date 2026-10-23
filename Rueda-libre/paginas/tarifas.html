@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/styles.css?v=1.0">
+  <link rel="stylesheet" href="../css/styles.css?v=1.0-final">
   <title>Tarifas | Rueda Libre Medellín</title>
 </head>
 <body>
@@ -25,11 +25,18 @@
   </header>
 
   <main id="contenido-principal" tabindex="-1">
-    <section class="page-intro"><h1>Tarifas de alquiler y recorridos</h1><p>Compara planes de alquiler y recorridos guiados en Medellín.</p></section>
-    <section id="alquiler">
+    <section>
+      <h1>Tarifas de alquiler y recorridos</h1>
+      <p>¡Mira nuestras tarifas y planes que tenemos disponibles para ti!.</p>
+    </section>
+
+      <section id="alquiler">
       <h2>Alquiler de bicicletas</h2>
+      <details>
+        <summary>Consulta las tarifas de alquiler</summary>
+        <p>Elige la bicicleta que mejor se adapte a tu paseo y recorre Medellín a tu ritmo. El alquiler <strong>incluye casco y candado</strong> para que salgas con lo esencial; <em>la ciudad se siente distinta cuando la recorres sin afán</em>.</p>
       <table>
-        <caption>Tarifas de alquiler de bicicletas (COP)</caption>
+        <caption>Tarifas de alquiler de bicicletas.</caption>
         <thead>
           <tr>
             <th scope="col">Tipo de bicicleta</th>
@@ -58,13 +65,17 @@
             <td>$110.000</td>
           </tr>
         </tbody>
-      </table>
+       </table>
+      </details>
     </section>
 
     <section id="recorridos">
       <h2>Recorridos guiados</h2>
+     <details>
+        <summary>Consulta los recorridos guiados y sus precios</summary>
+        <p>Pedalea en compañía de un guía local que te muestra calles, parques y rincones de Medellín. Es una forma <em>tranquila y cercana</em> de conocer la ciudad mientras compartes el camino con otras personas.</p>
       <table>
-        <caption>Recorridos guiados y precio por persona (COP)</caption>
+        <caption>Recorridos guiados y precio por persona.</caption>
         <thead>
           <tr>
             <th scope="col">Recorrido</th>
@@ -98,6 +109,7 @@
           </tr>
         </tbody>
       </table>
+     </details>
     </section>
 
     <section aria-labelledby="info-adicional">
@@ -116,7 +128,7 @@
 
   <footer class="site-footer">
     <p>© 2026 Rueda Libre · Medellín</p>
-    <nav aria-label="Navegación del pie"><ul>
+    <nav aria-label="Navegación"><ul>
       <li><a href="../index.html">Inicio</a></li>
       <li><a href="tarifas.html" aria-current="page">Tarifas</a></li>
       <li><a href="reservas.html">Reservas</a></li>
