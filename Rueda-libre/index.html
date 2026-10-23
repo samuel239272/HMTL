@@ -8,31 +8,28 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=interaccion">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
   <title>Rueda Libre | Alquiler de bicicletas en Medellín</title>
 </head>
 <body>
   <a href="#contenido-principal">Saltar al contenido principal</a>
-  <header class="portada">
-    <figure>
-      <img src="img/ruedalibreportada.jpeg" alt="Anuncio de Rueda Libre con ciclistas en Medellín; promociona bicicletas, accesorios y taller, e indica El Poblado y el teléfono 300 123 4567" width="640">
-    </figure>
-    <h1>Rueda Libre</h1>
-    <p>Somos un equipo de Medellín que te ayuda a descubrir la ciudad en bicicleta. Ya sea que quieras recorrerla por tu cuenta o con un guía, <a href="#encuentranos">ven a conocernos en Medellín</a>.</p>
-    <nav aria-label="Navegación principal">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Rueda Libre, inicio"><img src="img/RUEDALIBRE.png" alt="Logo de Rueda Libre" width="200"></a>
+    <nav class="site-nav" aria-label="Navegación principal">
       <ul id="menu">
         <li><a href="index.html" class="activo" aria-current="page">Inicio</a></li>
-        <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
-        <li><a href="#servicios">Nuestros servicios</a></li>
-        <li><a href="#como-alquilar">¿Cómo alquilar?</a></li>
         <li><a href="paginas/tarifas.html">Tarifas</a></li>
         <li><a class="cta" href="paginas/reservas.html">Reservar ahora</a></li>
-        <li><a href="#encuentranos">Encuéntranos</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="contenido-principal" tabindex="-1">
+    <section class="hero portada" aria-labelledby="titulo-inicio">
+      <figure><img src="img/ruedalibreportada.jpeg" alt="Ciclistas recorren Medellín en una imagen promocional de Rueda Libre" width="640"></figure>
+      <h1 id="titulo-inicio">Rueda Libre</h1>
+      <p>Somos un equipo de Medellín que te ayuda a descubrir la ciudad en bicicleta. Ya sea que quieras recorrerla por tu cuenta o con un guía, <a href="#encuentranos">ven a conocernos en Medellín</a>.</p>
+    </section>
     <section id="quienes-somos">
       <h2>¿Quiénes somos?</h2>
       <p>En Rueda Libre creemos que la bicicleta es una forma cercana y divertida de conocer Medellín. Te acompañamos para que elijas una opción cómoda, segura y adecuada para tu plan.</p>
@@ -46,7 +43,7 @@
 
     <section id="servicios">
       <h2>Nuestros servicios</h2>
-      <article>
+      <article class="service-card">
         <h3>Alquiler de bicicletas</h3>
         <p>Escoge la bicicleta que mejor se adapte a tu paseo y recorre Medellín a tu ritmo. El alquiler <strong>incluye casco y candado</strong> para que salgas con lo esencial; <em>la ciudad se siente distinta cuando la recorres sin afán</em>.</p>
         <figure>
@@ -54,7 +51,7 @@
         </figure>
       </article>
 
-      <article>
+      <article class="service-card">
         <h3>Recorridos guiados</h3>
         <p>Pedalea en compañía de un guía local que te muestra calles, parques y rincones de Medellín. Es una forma <em>tranquila y cercana</em> de conocer la ciudad mientras compartes el camino con otras personas. <a href="paginas/tarifas.html#recorridos">Consulta los recorridos guiados y sus precios</a>.</p>
         <figure>
@@ -62,12 +59,18 @@
         </figure>
       </article>
 
-      <article>
+      <article class="service-card">
         <h3>Taller básico</h3>
         <p>Aprende cuidados sencillos para tu bicicleta, como revisar las llantas, ajustar el sillín y reconocer cuándo necesitas ayuda técnica. Te llevas consejos prácticos para disfrutar <strong>más seguridad durante el recorrido</strong>.</p>
         <figure>
           <img src="img/taller.jpeg" alt="Anuncio de taller básico con ajuste de frenos y cambios, lubricación, despiche y revisión general; indica El Poblado y teléfono 300 123 4567" width="640">
         </figure>
+      </article>
+
+      <article class="service-card service-card--new">
+        <span class="badge-new">Nuevo</span>
+        <h3>Bicicletas eléctricas</h3>
+        <p>Recorre más distancia con asistencia eléctrica y disfruta Medellín a tu ritmo. El alquiler incluye casco y candado; <em>una alternativa cómoda para descubrir nuevos lugares</em>. <a href="paginas/tarifas.html#alquiler">Consulta las tarifas de bicicletas eléctricas</a>.</p>
       </article>
     </section>
 
@@ -89,5 +92,14 @@
       <p>Consultas y reservas: <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a></p>
     </section>
   </main>
+  <footer class="site-footer">
+    <p>© 2026 Rueda Libre · Medellín</p>
+    <nav aria-label="Navegación del pie"><ul>
+      <li><a href="index.html" aria-current="page">Inicio</a></li>
+      <li><a href="paginas/tarifas.html">Tarifas</a></li>
+      <li><a href="paginas/reservas.html">Reservas</a></li>
+    </ul></nav>
+  </footer>
+  <a class="whatsapp-float" href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer">WhatsApp</a>
 </body>
 </html>

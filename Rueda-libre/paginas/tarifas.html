@@ -8,28 +8,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/styles.css?v=interaccion">
+  <link rel="stylesheet" href="../css/styles.css?v=1.0">
   <title>Tarifas | Rueda Libre Medellín</title>
 </head>
 <body>
   <a href="#contenido-principal">Saltar al contenido principal</a>
-  <header>
-    <a href="../index.html" aria-label="Rueda Libre, volver al inicio">
-      <img src="../img/RUEDALIBRE.png" alt="Logo de Rueda Libre con un ciclista y el nombre de la marca" width="200">
-    </a>
-    <h1>Tarifas de alquiler y recorridos</h1>
-    <nav aria-label="Navegación principal">
+  <header class="site-header">
+    <a class="brand" href="../index.html" aria-label="Rueda Libre, inicio"><img src="../img/RUEDALIBRE.png" alt="Logo de Rueda Libre" width="200"></a>
+    <nav class="site-nav" aria-label="Navegación principal">
       <ul id="menu">
-        <li><a href="../index.html">Volver al inicio</a></li>
-        <li><a class="cta" href="reservas.html">Reservar ahora</a></li>
+        <li><a href="../index.html">Inicio</a></li>
         <li><a href="tarifas.html" class="activo" aria-current="page">Tarifas</a></li>
-        <li><a href="#alquiler">Tarifas de alquiler</a></li>
-        <li><a href="#recorridos">Recorridos guiados</a></li>
+        <li><a class="cta" href="reservas.html">Reservar ahora</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="contenido-principal" tabindex="-1">
+    <section class="page-intro"><h1>Tarifas de alquiler y recorridos</h1><p>Compara planes de alquiler y recorridos guiados en Medellín.</p></section>
     <section id="alquiler">
       <h2>Alquiler de bicicletas</h2>
       <table>
@@ -118,8 +114,14 @@
     </section>
   </main>
 
-  <footer>
-    <p><a href="../index.html">Volver a la página de inicio de Rueda Libre</a></p>
+  <footer class="site-footer">
+    <p>© 2026 Rueda Libre · Medellín</p>
+    <nav aria-label="Navegación del pie"><ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="tarifas.html" aria-current="page">Tarifas</a></li>
+      <li><a href="reservas.html">Reservas</a></li>
+    </ul></nav>
   </footer>
+  <a class="whatsapp-float" href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer">WhatsApp</a>
 </body>
 </html>
