@@ -1,6 +1,6 @@
 # Rueda Libre
 
-Sitio estático para conocer los servicios de alquiler de bicicletas en Medellín.
+Sitio para conocer los servicios de alquiler de bicicletas en Medellín de Rueda Libre.
 
 ## Ver el sitio
 
